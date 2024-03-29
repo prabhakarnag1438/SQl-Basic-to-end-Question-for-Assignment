@@ -1,0 +1,55 @@
+1. Table Structures:
+
+   countries table: country_id, country_name
+   capitals table: capital_id, capital_name, country_id
+
+   -List all countries and their capitals, including countries without known capitals.
+
+SELECT COUNTRIES.COUNTRY_NAME, CAPITALS.CAPITAL_NAME
+FROM COUNTRIES, CAPITALS
+WHERE COUNTRIES.CAPITAL_ID = CAPITALS.CAPITAL_ID(+);
+
+
+2. Table Structures:
+
+   managers table: manager_id, manager_name
+   employees table: employee_id, employee_name, manager_id
+
+   -Display a list of all managers and the employees they manage, including managers who do     not have any employees under them.
+
+SELECT M.MANAGER_NAME,E.EMPLOYEE_NAME
+FROM MANAGER M ,EMPLOYEE E
+WHERE M.MANAGER_ID,E.EMPLOYEE_ID(+)
+
+3. Table Structures:
+
+   authors table: author_id, author_name
+   books table: book_id, book_title, author_id
+
+   -Show a list of all available books and the authors who wrote them, including authors     without any associated books.
+
+SELECT A.AUTHOR_NAME,B.BOOK_TITTLE
+FROM AUTHORS A,BOOK B
+WHERE A.AUTHOR_ID=B.BOOK_ID(+)
+
+4. Table Structures:
+
+   customers table: customer_id, customer_name
+   orders table: order_id, customer_id, order_date
+
+   -Retrieve a list of all customers and their orders, along with any unmatched data from both     sides.
+
+SELECT C.CUSTOMER_NAME,CC.CUSTOMER_DATE,CC.ORDER_DATE
+FROM CUSTOMERS C FULL JOINE ORDERS CC
+ON C.CUSTOMER_ID = CC.CUSTOMER_ID
+
+5. Table Structures:
+
+   products table: product_id, product_name, supplier_id
+   suppliers table: supplier_id, supplier_name
+
+   -List all available products and their suppliers, along with any products without suppliers     and suppliers without associated products.
+
+SELECT P.PRODUCT_NAME,S.SUPPLIER_NAME
+FROM PRODUCT P FULL JOIN SUPPLIESR P
+ON P.PRODUCT_ID = S.SUPPLIER_ID

@@ -1,0 +1,14 @@
+sele1. Write an SQL query to retrieve the employee details sorted by salary in descending order.    However, if two employees have the same salary, they should be sorted by their name in    ascending order.
+
+2. In a database containing a table named Orders, there are columns OrderID, CustomerName,    OrderDate, and OrderStatus. The OrderStatus can be 'Pending', 'Processing', or 'Completed'.    Write an SQL query to retrieve the orders sorted in the following order:
+
+   'Completed' orders first.
+   'Pending' orders next.
+   'Processing' orders last.
+
+3. You have a table named Products with columns ProductID, ProductName, Category, and    StockQuantity. Write an SQL query to retrieve the products sorted by Category in ascending    order. However, products within the same category should be sorted by StockQuantity in    descending order.
+
+4. WAQTD details of employees IF THEY EARN LESS THAN 1500 GIVE C, LESS THAN 2500 GIVE B ELSE
+   GIVE A AS GRADE AND ALSO SORT THE RECORDS ORDER BY GRADE IN ASSENDING ORDER LIKE FOLLOWED    BY A,B,C.
+
+5. WAQTD details of employees order by deptno first 10 then 30 then 20 if there are duplicate deptno then should be sorted by ename in desc order.
